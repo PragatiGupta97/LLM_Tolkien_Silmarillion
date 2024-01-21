@@ -31,9 +31,17 @@ J.R.R. Tolkien is one of my favorite authors and I have always wanted to do some
     ```bash
     pip install -r requirements.txt
     ```
-6. Step 6: start your jupyter notebook
-    ```bash
-    jupyter notebook
-    ```
-7. Step 7: Open the notebook and run the cells
+6. Step 6: 
+    * To run using jupyter
+        start your jupyter notebook
+        ```bash
+        jupyter notebook
+        ```
+        Open the notebook and run the cells
+        
+    * To run using UI
+        ```bash
+        streamlit run app.py
+        ```
+
    

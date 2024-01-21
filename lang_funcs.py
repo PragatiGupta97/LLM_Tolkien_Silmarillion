@@ -58,6 +58,16 @@ def create_embeddings(chunks, embedding_model, storing_path="vectorstore"):
     # returning the vectorstore
     return vectorstore
 
+def load_retriever(embedding_model,storing_path="vectorstore"):
+    # Loading the vectorstore
+    vectorstore = FAISS.load_local(storing_path, embedding_model)
+    
+    # converting vectorstore to a retriever
+    retriever = vectorstore.as_retriever()
+    
+    # returning the retriever
+    return retriever
+
 # Creating the chain for Question Answering
 def load_qa_chain(retriever, llm, prompt):
     return RetrievalQA.from_chain_type(
@@ -75,3 +85,4 @@ def get_response(query, chain):
     # Wrapping the text for better output in Jupyter Notebook
     wrapped_text = textwrap.fill(response['result'], width=100)
     print(wrapped_text)
+    return wrapped_text
