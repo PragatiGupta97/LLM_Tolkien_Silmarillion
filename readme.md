@@ -3,7 +3,7 @@
 I have been a avid follower of the Silmarillion for a long time. I have read the book many times and I have always wanted to create a personal assistant that would be able to answer questions about the Silmarillion. I have finally decided to do it. 
 J.R.R. Tolkien is one of my favorite authors and I have always wanted to do something to honor his work. I hope that this project will be a good start.
 
-![Alt text](image.png)
+![Alt text](image-1.png)
 
 ## How to use it
 1. Step 1: Download Ollama
